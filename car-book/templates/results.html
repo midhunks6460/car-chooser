@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Selection Results</title>
+</head>
+<body>
+    <h1>Car Selection Results</h1>
+    <ul>
+        {% for car in cars %}
+            <li>
+                <strong>Company:</strong> {{ car.company }}<br>
+                <strong>Model:</strong> {{ car.model }}<br>
+                <strong>Price:</strong> ${{ car.price }}<br>
+                <strong>Mileage:</strong> {{ car.mileage }} MPG<br>
+                <strong>Safety Rating:</strong> {{ car.safety }}/5
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go back to the selection tool</a>
+</body>
+</html>
